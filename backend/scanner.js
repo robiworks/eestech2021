@@ -6,105 +6,63 @@ const fs = require("fs-extra");
 const util = require("util");
 const path = require("path");
 const find = require('local-devices');
+const express = require("express");
 
 nmap.nmapLocation = "nmap";
 
 var dataDir = "./data/";
 let predpomnilnik = {};
+let h;
 
-const port = process.env.PORT || 8080;
+if (!process.env.PORT) process.env.PORT = 8080;
 
-const streznik = http.createServer((zahteva, odgovor) => {
-    let potDoDatoteke = false;
-    if (zahteva.url == "/") {
-        potDoDatoteke = ".././spletna-stran/index.html";
-    } else if (zahteva.url == "/api") {
-        doAPIThing(odgovor);
-    } else {
-        potDoDatoteke = "../spletna-stran" + zahteva.url;
-    }
-    // Statično vsebino postrežemo le takrat, ko gre za zahtevo takšne vrste
-    if (potDoDatoteke) posredujStaticnoVsebino(odgovor, potDoDatoteke);
+const streznik = express();
+
+streznik.use(express.static("public"));
+
+streznik.get("/", (req,odgovor) => {
+    //let k = fs.readFileSync(path.resolve(__dirname, "../spletna-stran/index.html"));
+    odgovor.sendFile(path.resolve(__dirname, "../spletna-stran/index.html"));
 });
 
-// Na tej točki strežnik poženemo
-streznik.listen(port, () => {
-    console.log("Strežnik pognana!");
+streznik.get("/api", (req, odgovor) => {
+  doAPIThing(odgovor);
 });
 
-// Obvladovanje napak
-function posredujNapako(odgovor, tip) {
-    odgovor.writeHead(tip, {
-        "Content-Type": "text/plain"
-    });
-    if (tip == 404) {
-        odgovor.end("Napaka 404: Vira ni mogoče najti.");
-    } else if (tip == 500) {
-        odgovor.end("Napaka 500: Prišlo je do napake strežnika.");
-    } else {
-        odgovor.end("Napaka " + tip + ": Neka druga napaka");
-    }
-}
+streznik.get("/*", (req,odgovor) => {
+    console.log(req);
+    odgovor.sendFile(path.resolve(__dirname, "../spletna-stran/"+req.originalUrl));
+});
 
-// Metoda, ki vrne datoteko in nastavi tip datoteke,
-// da jo brskalnik zna ustrezno prikazati
-function posredujDatoteko(odgovor, datotekaPot, datotekaVsebina) {
-    odgovor.writeHead(200, {
-        "Content-Type": mime.lookup(path.basename(datotekaPot)),
-    });
-    odgovor.end(datotekaVsebina);
-}
-
-
-function posredujStaticnoVsebino(odgovor, potDoDatoteke) {
-    // Preverjanje, ali je datoteka v predpomnilniku
-    if (predpomnilnik[potDoDatoteke]) {
-        posredujDatoteko(odgovor, potDoDatoteke, predpomnilnik[potDoDatoteke]);
-    } else {
-        fs.access(potDoDatoteke, (napaka) => {
-            if (!napaka) {
-                fs.readFile(potDoDatoteke, (napaka, datotekaVsebina) => {
-                    if (napaka) {
-                        posredujNapako(odgovor, 500);
-                    } else {
-                        // Shranjevanje vsebine nove datoteke v predpomnilnik
-                        predpomnilnik[potDoDatoteke] = datotekaVsebina;
-                        posredujDatoteko(odgovor, potDoDatoteke, datotekaVsebina);
-                    }
-                });
-            } else {
-                posredujNapako(odgovor, 404);
-            }
-        });
-    }
-}
+streznik.listen(process.env.PORT, () => {
+  console.log("Strežnik je pognan!");
+});
 
 async function doAPIThing(odgovor) {
     let detected;
-    odgovor.writeHead(200, {
-        "Content-Type": "application/json"
-    });
     detected = await find();
-    console.log(detected);
-    for (let i = 0; i < detected.length; i++) {
-        detailedScan(detected[i].ip);
+    var ob = [];
+    for (var i = 0; i < detected.length; i++) {
+        ob[i] = detected[i].ip;
     }
+    let h = await detailedScan(ob, odgovor);
+    return h;
     
 }
 
 
-async function detailedScan(host) {
-    var osandports = new nmap.NmapScan(host, '-sS -F --max-retries 1');
-
-    osandports.on('complete', function (data) {
-        this.data = data;
+async function detailedScan(host, odgovor) {
+    var osandports = new nmap.NmapScan(host, '-sS -F --max-retries 1 -T5');
+    var k = osandports.on('complete', function (data) {
         console.log(data);
+        odgovor.send(data)
     });
-    
     osandports.on('error', function (error) {
         console.log(error);
     });
+    osandports.startScan();
 
-    await osandports.startScan();
-
+    return k;
 }
+
+

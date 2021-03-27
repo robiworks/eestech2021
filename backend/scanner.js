@@ -44,6 +44,7 @@ osandports.on('error', function(error){
 });
  
 osandports.startScan();
+
 function createResponse(hostname, ip, ports) {
     var jsonResponse = new Object();
     jsonResponse.hostname = hostname;

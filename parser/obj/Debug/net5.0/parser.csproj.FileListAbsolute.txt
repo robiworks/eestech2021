@@ -1,0 +1,16 @@
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\parser.exe
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\parser.deps.json
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\parser.runtimeconfig.json
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\parser.runtimeconfig.dev.json
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\parser.dll
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\ref\parser.dll
+C:\Users\Zoran\Desktop\hackathon\parser\bin\Debug\net5.0\parser.pdb
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.csprojAssemblyReference.cache
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.AssemblyInfoInputs.cache
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.AssemblyInfo.cs
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.csproj.CoreCompileInputs.cache
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.dll
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\ref\parser.dll
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.pdb
+C:\Users\Zoran\Desktop\hackathon\parser\obj\Debug\net5.0\parser.genruntimeconfig.cache

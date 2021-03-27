@@ -42,7 +42,7 @@ async function constructLocal(data) {
         let p = row.insertCell();
         p.innerHTML = "Odprti porti";
         let h = row.insertCell();
-        h.innerHTML = "Tip klijenta"
+        h.innerHTML = "Tip klienta"
         let o = row.insertCell();
         o.style.textAlign = "center";
         o.innerHTML = "Ocena";

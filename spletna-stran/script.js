@@ -11,19 +11,25 @@ function createElement(tag, innerHTML, classList, style, parent) {
 }   
 
 
-
-async function constructBody(type) {
-    constructLocal('');
+async function constructBody() {
+    var data = await callServer();
+    constructLocal(data);
 }
 
 async function constructLocal(data) {
-    console.log(body);
-    let table = createElement('table','','table table-striped',body);
+    if (body.innerHTML!="") {
+        body.innerHTML = "";
+    }
+    let interval = document.getElementById('updateInterval').value;
+    let counter = createElement('p','Naslednja posodobitev čez ','h3','',body);
+    let amount = createElement('small', interval + "s",'h3','',counter);
+    amount.id = "time-remaining";
+    let table = createElement('table','','table table-striped','',body);
     // header
     {
-        let row = createElement('tr','','font-weight:bold',table);
-        console.log(row);
+        let row = createElement('tr','','','font-weight:bold;',table);
         let r = row.insertCell();
+        r.style.textAlign = "center";
         r.innerHTML = "#";
         let n = row.insertCell();
         n.innerHTML = "Naslov";
@@ -32,19 +38,42 @@ async function constructLocal(data) {
         let o = row.insertCell();
         o.innerHTML = "Ocena";
     }
-
     for (let i = 0; i < data.length; i++) {
-        let row = createElement('tr','','',table);
+        let row = createElement('tr','','','',table);
+        if (i%2==0) {
+            row.style.backgroundColor = "#F2F2F2"
+        }
+        let r = row.insertCell();
+        r.style.textAlign = "center";
+        r.innerHTML = "<b>" + (i+1) + "</b>";
+        let n = row.insertCell();
+        n.innerHTML = data[i].ip + (data[i].hostname ? " (" + data[i].hostname + ")" : "");
+        let p = row.insertCell();
+        for (let j = 0; j < data[i].ports.length; j++) {
+            p.innerHTML += "<b>" + data[i].ports[j].port + "</b> " + data[i].ports[j].protocol + "-" + data[i].ports[j].service + "\n";
+        }
+        let o = row.insertCell();
+        o.innerHTML = "Ocena";
 
     }
-    console.log(body);
+    awaitUpdate();
+}
 
+async function awaitUpdate() {
+    let value = parseInt(document.getElementById('time-remaining').innerHTML);
+    console.log(value);
+    if (value > 0 ) {
+        value--;
+        document.getElementById('time-remaining').innerHTML = value + "s...";
+        setTimeout(awaitUpdate,1000);
+    } else {
+        constructBody();
+    }
 
 }
 
 
-async function callServer(type,ip,port) {
-    return;
+async function callServer() {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -52,16 +81,14 @@ async function callServer(type,ip,port) {
     var response;
 
     var requestOptions = {
-        method: 'POST',
+        method: 'GET',
         headers: myHeaders,
-        body: raw,
         redirect: 'follow'
-    };
+      };
 
-    await fetch("",requestOptions)
+    await fetch("example_response.json",requestOptions)
             .then(response => response.text())
-            .then(result => response = result)
+            .then(result => response = JSON.parse(result))
             .then(error => console.log(error))
-
-    console.log(response);
+    return response;
 } 

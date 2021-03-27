@@ -7,8 +7,8 @@
         "fs-extra": "latest",
         "local-devices": "^3.1.0",
         "mime-types": "latest",
-        "node-nmap": "latest",
         "queued-up": "latest",
-        "xml2js": "latest"
+        "xml2js": "latest",
+        "libnmap": "latest"
     }
 }

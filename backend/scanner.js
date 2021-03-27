@@ -22,8 +22,8 @@ var stealthscan = new nmap.NmapScan('fri.uni-lj.si', '-sS');
 
 stealthscan.on('complete', function(data) {
     //console.log(data);
-    var jsonResponse = createResponse(data);
-    console.log(jsonResponse);
+    //var jsonResponse = createResponse(data);
+    //console.log(jsonResponse);
 })
 
 stealthscan.on('error', function(error) {
@@ -37,7 +37,8 @@ stealthscan.startScan();
 var osandports = new nmap.OsAndPortScan('fri.uni-lj.si');
  
 osandports.on('complete',function(data){
-    console.log(data);
+    var jsonResponse = createResponse(data);
+    console.log(jsonResponse);
 });
 
 osandports.on('error', function(error){
@@ -51,5 +52,6 @@ function createResponse(data) {
     jsonResponse.hostname = data[0].hostname;
     jsonResponse.ip = data[0].ip;
     jsonResponse.ports = data[0].openPorts;
+    jsonResponse.os = data[0].osNmap;
     return jsonResponse;
 }

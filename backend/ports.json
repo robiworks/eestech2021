@@ -1,0 +1,67 @@
+[
+    {
+        "port": 21,
+        "exploitable": true,
+        "desc": "FTP (File Transfer Protocol)"
+    },
+    {
+        "port": 22,
+        "exploitable": true,
+        "desc": "SSH (Secure Shell)"
+    },
+    {
+        "port": 23,
+        "exploitable": true,
+        "desc": "Telnet"
+    },
+    {
+        "port": 25,
+        "exploitable": true,
+        "desc": "SMTP (Simple Mail Transfer Protocol)"
+    },
+    {
+        "port": 53,
+        "exploitable": true,
+        "desc": "DNS (Domain Name System)"
+    },
+    {
+        "port": 110,
+        "exploitable": true,
+        "desc": "POP3 (Post Office Protocol version 3)"
+    },
+    {
+        "port": 135,
+        "exploitable": true,
+        "desc": "Windows RPC"
+    },
+    {
+        "port": 137,
+        "exploitable": true,
+        "desc": "Windows NetBIOS over TCP/IP"
+    },
+    {
+        "port": 138,
+        "exploitable": true,
+        "desc": "Windows NetBIOS over TCP/IP"
+    },
+    {
+        "port": 139,
+        "exploitable": true,
+        "desc": "Windows NetBIOS over TCP/IP"
+    },
+    {
+        "port": 443,
+        "exploitable": true,
+        "desc": "HTTP (Hypertext Transport Protocol) and HTTPS (HTTP over SSL)"
+    },
+    {
+        "port": 1433,
+        "exploitable": true,
+        "desc": "Microsoft SQL Server"
+    },
+    {
+        "port": 1434,
+        "exploitable": true,
+        "desc": "Microsoft SQL Server"
+    }
+]

@@ -166,7 +166,7 @@
         "desc": "HTTP",
         "extended-desc": "Alternative HTTP port",
         "sightings": ""
-    }
+    },
     {
         "port": 8080,
         "exploitable": 3,

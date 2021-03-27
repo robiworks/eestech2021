@@ -1,0 +1,51 @@
+[{
+    "hostname": "fri.uni-lj.si",
+    "ip": "193.2.72.98",
+    "ports": [{
+            "port": 80,
+            "protocol": "tcp",
+            "service": "http",
+            "method": "table"
+        },
+        {
+            "port": 443,
+            "protocol": "tcp",
+            "service": "https",
+            "method": "table"
+        }
+    ]
+},
+{
+    "hostname": "fri.uni-lj.si",
+    "ip": "193.2.72.98",
+    "ports": [{
+            "port": 80,
+            "protocol": "tcp",
+            "service": "http",
+            "method": "table"
+        },
+        {
+            "port": 443,
+            "protocol": "tcp",
+            "service": "https",
+            "method": "table"
+        }
+    ]
+},
+{
+    "hostname": "fri.uni-lj.si",
+    "ip": "193.2.72.98",
+    "ports": [{
+            "port": 80,
+            "protocol": "tcp",
+            "service": "http",
+            "method": "table"
+        },
+        {
+            "port": 443,
+            "protocol": "tcp",
+            "service": "https",
+            "method": "table"
+        }
+    ]
+}]

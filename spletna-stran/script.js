@@ -25,6 +25,7 @@ async function constructLocal(data) {
     if (body.innerHTML!="") {
         body.innerHTML = "";
     }
+    globalDeviceObject = [];
     let interval = parseInt(document.getElementById('updateInterval').value) + 1;
     let counter = createElement('p','Naslednja posodobitev čez ','h3','',body);
     let amount = createElement('small', interval + "s",'h3','',counter);

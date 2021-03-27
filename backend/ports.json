@@ -1,175 +1,175 @@
 [
     {
         "port": 21,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "FTP (File Transfer Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 22,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "SSH (Secure Shell)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 23,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "Telnet",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 25,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "SMTP (Simple Mail Transfer Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 53,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "DNS (Domain Name System)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 80,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "HTTP (Hypertext Transport Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 110,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "POP3 (Post Office Protocol version 3)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 111,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "RPCBIND",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 135,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "Windows RPC (Remote Procedure Call)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 137,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "Windows NetBIOS over TCP/IP",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 138,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "Windows NetBIOS over TCP/IP",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 139,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "Windows NetBIOS over TCP/IP",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 143,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "IMAP (Internet Message Access Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 443,
-        "exploitable": true,
+        "exploitable": 2,
         "desc": "HTTPS (HTTP over SSL)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 445,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "SMB (Server Message Block)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 993,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "IMAPS (IMAP over SSL)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 995,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "POP3S (POP3 over SSL)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 1433,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "MSSQL (Microsoft SQL Server)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 1434,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "MSSQL (Microsoft SQL Server)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 1723,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "PPTP (Point-to-Point Tunneling Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 3306,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "MySQL",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 3389,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "MSWBT (Microsoft Windows Based Terminal Server)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 5900,
-        "exploitable": true,
+        "exploitable": 1,
         "desc": "RFB (Remote Frame Buffer) / VNC (Virtual Network Computing)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 8008,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "HTTP alternative port",
         "extended-desc": "",
         "sightings": ""
     }
     {
         "port": 8080,
-        "exploitable": true,
+        "exploitable": 3,
         "desc": "HTTP alternative port",
         "extended-desc": "",
         "sightings": ""

@@ -13,7 +13,8 @@
             "service": "https",
             "method": "table"
         }
-    ]
+    ],
+    "os": "Linux 5.0"
 },
 {
     "hostname": "fri.uni-lj.si",
@@ -30,7 +31,8 @@
             "service": "https",
             "method": "table"
         }
-    ]
+    ],
+    "os": "Linux 5.0"
 },
 {
     "hostname": "fri.uni-lj.si",
@@ -47,5 +49,6 @@
             "service": "https",
             "method": "table"
         }
-    ]
+    ],
+    "os": "Linux 5.0"
 }]

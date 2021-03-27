@@ -58,7 +58,7 @@
     {
         "port": 135,
         "exploitable": true,
-        "desc": "Windows RPC",
+        "desc": "Windows RPC (Remote Procedure Call)",
         "extended-desc": "",
         "sightings": ""
     },
@@ -86,14 +86,14 @@
     {
         "port": 143,
         "exploitable": true,
-        "desc": "IMAP",
+        "desc": "IMAP (Internet Message Access Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 443,
         "exploitable": true,
-        "desc": "HTTP (Hypertext Transport Protocol) and HTTPS (HTTP over SSL)",
+        "desc": "HTTPS (HTTP over SSL)",
         "extended-desc": "",
         "sightings": ""
     },
@@ -107,35 +107,35 @@
     {
         "port": 993,
         "exploitable": true,
-        "desc": "IMAPS",
+        "desc": "IMAPS (IMAP over SSL)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 995,
         "exploitable": true,
-        "desc": "POP3S",
+        "desc": "POP3S (POP3 over SSL)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 1433,
         "exploitable": true,
-        "desc": "Microsoft SQL Server",
+        "desc": "MSSQL (Microsoft SQL Server)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 1434,
         "exploitable": true,
-        "desc": "Microsoft SQL Server",
+        "desc": "MSSQL (Microsoft SQL Server)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 1723,
         "exploitable": true,
-        "desc": "PPTP",
+        "desc": "PPTP (Point-to-Point Tunneling Protocol)",
         "extended-desc": "",
         "sightings": ""
     },
@@ -149,21 +149,28 @@
     {
         "port": 3389,
         "exploitable": true,
-        "desc": "MS-WBT-Server",
+        "desc": "MSWBT (Microsoft Windows Based Terminal Server)",
         "extended-desc": "",
         "sightings": ""
     },
     {
         "port": 5900,
         "exploitable": true,
-        "desc": "VNC",
+        "desc": "RFB (Remote Frame Buffer) / VNC (Virtual Network Computing)",
         "extended-desc": "",
         "sightings": ""
     },
     {
+        "port": 8008,
+        "exploitable": true,
+        "desc": "HTTP alternative port",
+        "extended-desc": "",
+        "sightings": ""
+    }
+    {
         "port": 8080,
         "exploitable": true,
-        "desc": "HTTP Proxy",
+        "desc": "HTTP alternative port",
         "extended-desc": "",
         "sightings": ""
     }

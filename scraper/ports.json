@@ -1,0 +1,1507 @@
+[
+	{
+		"port": 1,
+		"exploitable": 1,
+		"desc": "TCPMUX",
+		"extended-desc": "TCP port service multiplexer",
+		"sightings": 0
+	},
+	{
+		"port": 5,
+		"exploitable": 1,
+		"desc": "RJE",
+		"extended-desc": "Remote Job Entry",
+		"sightings": 0
+	},
+	{
+		"port": 7,
+		"exploitable": 1,
+		"desc": "ECHO",
+		"extended-desc": "Echo service",
+		"sightings": 0
+	},
+	{
+		"port": 9,
+		"exploitable": 1,
+		"desc": "DISCARD",
+		"extended-desc": "Null service for connection testing",
+		"sightings": 0
+	},
+	{
+		"port": 11,
+		"exploitable": 1,
+		"desc": "SYSTAT",
+		"extended-desc": "System Status service for listing connected ports",
+		"sightings": 0
+	},
+	{
+		"port": 13,
+		"exploitable": 1,
+		"desc": "DAYTIME",
+		"extended-desc": "Sends date and time to requesting host",
+		"sightings": 0
+	},
+	{
+		"port": 17,
+		"exploitable": 1,
+		"desc": "QOTD",
+		"extended-desc": "Sends quote of the day to connected host",
+		"sightings": 0
+	},
+	{
+		"port": 18,
+		"exploitable": 1,
+		"desc": "MSP",
+		"extended-desc": "Message Send Protocol",
+		"sightings": 0
+	},
+	{
+		"port": 19,
+		"exploitable": 1,
+		"desc": "CHARGEN",
+		"extended-desc": "Character Generation service; sends endless stream of characters",
+		"sightings": 0
+	},
+	{
+		"port": 20,
+		"exploitable": 1,
+		"desc": "FTP-DATA",
+		"extended-desc": "FTP data port",
+		"sightings": 0
+	},
+	{
+		"port": 21,
+		"exploitable": 3,
+		"desc": "FTP",
+		"extended-desc": "File Transfer Protocol (FTP) port; sometimes used by File Service Protocol (FSP)",
+		"sightings": 158
+	},
+	{
+		"port": 22,
+		"exploitable": 1,
+		"desc": "SSH",
+		"extended-desc": "Secure Shell (SSH) service",
+		"sightings": 27
+	},
+	{
+		"port": 23,
+		"exploitable": 1,
+		"desc": "TELNET",
+		"extended-desc": "The Telnet service",
+		"sightings": 17
+	},
+	{
+		"port": 25,
+		"exploitable": 1,
+		"desc": "SMTP",
+		"extended-desc": "Simple Mail Transfer Protocol (SMTP)",
+		"sightings": 42
+	},
+	{
+		"port": 37,
+		"exploitable": 1,
+		"desc": "TIME",
+		"extended-desc": "Time Protocol",
+		"sightings": 0
+	},
+	{
+		"port": 39,
+		"exploitable": 1,
+		"desc": "RLP",
+		"extended-desc": "Resource Location Protocol",
+		"sightings": 0
+	},
+	{
+		"port": 42,
+		"exploitable": 1,
+		"desc": "NAMESERVER",
+		"extended-desc": "Internet Name Service",
+		"sightings": 2
+	},
+	{
+		"port": 43,
+		"exploitable": 1,
+		"desc": "NICNAME",
+		"extended-desc": "WHOIS directory service",
+		"sightings": 0
+	},
+	{
+		"port": 49,
+		"exploitable": 1,
+		"desc": "TACACS",
+		"extended-desc": "Terminal Access Controller Access Control System for TCP/IP based authentication and access",
+		"sightings": 1
+	},
+	{
+		"port": 50,
+		"exploitable": 1,
+		"desc": "RE-MAIL-CK",
+		"extended-desc": "Remote Mail Checking Protocol",
+		"sightings": 0
+	},
+	{
+		"port": 53,
+		"exploitable": 1,
+		"desc": "DOMAIN",
+		"extended-desc": "domain name services (such as BIND)",
+		"sightings": 10
+	},
+	{
+		"port": 63,
+		"exploitable": 1,
+		"desc": "WHOIS++",
+		"extended-desc": "WHOIS++, extended WHOIS services",
+		"sightings": 0
+	},
+	{
+		"port": 67,
+		"exploitable": 1,
+		"desc": "BOOTPS",
+		"extended-desc": "Bootstrap Protocol (BOOTP) services; also used by Dynamic Host Configuration Protocol (DHCP) services",
+		"sightings": 0
+	},
+	{
+		"port": 68,
+		"exploitable": 1,
+		"desc": "BOOTPC",
+		"extended-desc": "Bootstrap (BOOTP) client; also used by Dynamic Host Control Protocol (DHCP) clients",
+		"sightings": 0
+	},
+	{
+		"port": 69,
+		"exploitable": 1,
+		"desc": "TFTP",
+		"extended-desc": "Trivial File Transfer Protocol (TFTP)",
+		"sightings": 24
+	},
+	{
+		"port": 70,
+		"exploitable": 1,
+		"desc": "GOPHER",
+		"extended-desc": "Gopher Internet document search and retrieval",
+		"sightings": 1
+	},
+	{
+		"port": 71,
+		"exploitable": 1,
+		"desc": "NETRJS-1",
+		"extended-desc": "Remote Job Service",
+		"sightings": 0
+	},
+	{
+		"port": 72,
+		"exploitable": 1,
+		"desc": "NETRJS-2",
+		"extended-desc": "Remote Job Service",
+		"sightings": 0
+	},
+	{
+		"port": 73,
+		"exploitable": 1,
+		"desc": "NETRJS-3",
+		"extended-desc": "Remote Job Service",
+		"sightings": 0
+	},
+	{
+		"port": 73,
+		"exploitable": 1,
+		"desc": "NETRJS-4",
+		"extended-desc": "Remote Job Service",
+		"sightings": 0
+	},
+	{
+		"port": 79,
+		"exploitable": 1,
+		"desc": "FINGER",
+		"extended-desc": "Finger service for user contact information",
+		"sightings": 2
+	},
+	{
+		"port": 80,
+		"exploitable": 3,
+		"desc": "HTTP",
+		"extended-desc": "HyperText Transfer Protocol (HTTP) for World Wide Web (WWW) services",
+		"sightings": 2046
+	},
+	{
+		"port": 88,
+		"exploitable": 1,
+		"desc": "KERBEROS",
+		"extended-desc": "Kerberos network authentication system",
+		"sightings": 0
+	},
+	{
+		"port": 95,
+		"exploitable": 1,
+		"desc": "SUPDUP",
+		"extended-desc": "Telnet protocol extension",
+		"sightings": 0
+	},
+	{
+		"port": 101,
+		"exploitable": 1,
+		"desc": "HOSTNAME",
+		"extended-desc": "Hostname services on SRI-NIC machines",
+		"sightings": 0
+	},
+	{
+		"port": 102,
+		"exploitable": 1,
+		"desc": "ISO-TSAP",
+		"extended-desc": "ISO Development Environment (ISODE) network applications",
+		"sightings": 2
+	},
+	{
+		"port": 105,
+		"exploitable": 1,
+		"desc": "CSNET-NS",
+		"extended-desc": "Mailbox nameserver; also used by CSO nameserver",
+		"sightings": 1
+	},
+	{
+		"port": 107,
+		"exploitable": 1,
+		"desc": "RTELNET",
+		"extended-desc": "Remote Telnet",
+		"sightings": 0
+	},
+	{
+		"port": 109,
+		"exploitable": 1,
+		"desc": "POP2",
+		"extended-desc": "Post Office Protocol version 2",
+		"sightings": 0
+	},
+	{
+		"port": 110,
+		"exploitable": 1,
+		"desc": "POP3",
+		"extended-desc": "Post Office Protocol version 3",
+		"sightings": 15
+	},
+	{
+		"port": 111,
+		"exploitable": 1,
+		"desc": "SUNRPC",
+		"extended-desc": "Remote Procedure Call (RPC) Protocol for remote command execution, used by Network Filesystem (NFS)",
+		"sightings": 8
+	},
+	{
+		"port": 113,
+		"exploitable": 1,
+		"desc": "AUTH",
+		"extended-desc": "Authentication and Ident protocols",
+		"sightings": 1
+	},
+	{
+		"port": 115,
+		"exploitable": 1,
+		"desc": "SFTP",
+		"extended-desc": "Secure File Transfer Protocol (SFTP) services",
+		"sightings": 0
+	},
+	{
+		"port": 117,
+		"exploitable": 1,
+		"desc": "UUCP-PATH",
+		"extended-desc": "Unix-to-Unix Copy Protocol (UUCP) Path services",
+		"sightings": 0
+	},
+	{
+		"port": 119,
+		"exploitable": 1,
+		"desc": "NNTP",
+		"extended-desc": "Network News Transfer Protocol (NNTP) for the USENET discussion system",
+		"sightings": 2
+	},
+	{
+		"port": 123,
+		"exploitable": 1,
+		"desc": "NTP",
+		"extended-desc": "Network Time Protocol (NTP)",
+		"sightings": 7
+	},
+	{
+		"port": 137,
+		"exploitable": 1,
+		"desc": "NETBIOS-NS",
+		"extended-desc": "NETBIOS Name Service used in Red Hat Enterprise Linux by Samba",
+		"sightings": 0
+	},
+	{
+		"port": 138,
+		"exploitable": 1,
+		"desc": "NETBIOS-DGM",
+		"extended-desc": "NETBIOS Datagram Service used in Red Hat Enterprise Linux by Samba",
+		"sightings": 0
+	},
+	{
+		"port": 139,
+		"exploitable": 1,
+		"desc": "NETBIOS-SSN",
+		"extended-desc": "NETBIOS Session Service used in Red Hat Enterprise Linux by Samba",
+		"sightings": 14
+	},
+	{
+		"port": 143,
+		"exploitable": 1,
+		"desc": "IMAP",
+		"extended-desc": "Internet Message Access Protocol (IMAP)",
+		"sightings": 48
+	},
+	{
+		"port": 161,
+		"exploitable": 1,
+		"desc": "SNMP",
+		"extended-desc": "Simple Network Management Protocol (SNMP)",
+		"sightings": 3
+	},
+	{
+		"port": 162,
+		"exploitable": 1,
+		"desc": "SNMPTRAP",
+		"extended-desc": "Traps for SNMP",
+		"sightings": 1
+	},
+	{
+		"port": 163,
+		"exploitable": 1,
+		"desc": "CMIP-MAN",
+		"extended-desc": "Common Management Information Protocol (CMIP)",
+		"sightings": 0
+	},
+	{
+		"port": 164,
+		"exploitable": 1,
+		"desc": "CMIP-AGENT",
+		"extended-desc": "Common Management Information Protocol (CMIP)",
+		"sightings": 1
+	},
+	{
+		"port": 174,
+		"exploitable": 1,
+		"desc": "MAILQ",
+		"extended-desc": "MAILQ email transport queue",
+		"sightings": 0
+	},
+	{
+		"port": 177,
+		"exploitable": 1,
+		"desc": "XDMCP",
+		"extended-desc": "X Display Manager Control Protocol (XDMCP)",
+		"sightings": 0
+	},
+	{
+		"port": 178,
+		"exploitable": 1,
+		"desc": "NEXTSTEP",
+		"extended-desc": "NeXTStep window server",
+		"sightings": 0
+	},
+	{
+		"port": 179,
+		"exploitable": 1,
+		"desc": "BGP",
+		"extended-desc": "Border Gateway Protocol",
+		"sightings": 0
+	},
+	{
+		"port": 191,
+		"exploitable": 1,
+		"desc": "PROSPERO",
+		"extended-desc": "Prospero distributed filesystem services",
+		"sightings": 0
+	},
+	{
+		"port": 194,
+		"exploitable": 1,
+		"desc": "IRC",
+		"extended-desc": "Internet Relay Chat (IRC)",
+		"sightings": 0
+	},
+	{
+		"port": 199,
+		"exploitable": 1,
+		"desc": "SMUX",
+		"extended-desc": "SNMP UNIX Multiplexer",
+		"sightings": 0
+	},
+	{
+		"port": 201,
+		"exploitable": 1,
+		"desc": "AT-RTMP",
+		"extended-desc": "AppleTalk routing",
+		"sightings": 0
+	},
+	{
+		"port": 202,
+		"exploitable": 1,
+		"desc": "AT-NBP",
+		"extended-desc": "AppleTalk name binding",
+		"sightings": 0
+	},
+	{
+		"port": 204,
+		"exploitable": 1,
+		"desc": "AT-ECHO",
+		"extended-desc": "AppleTalk echo",
+		"sightings": 0
+	},
+	{
+		"port": 206,
+		"exploitable": 1,
+		"desc": "AT-ZIS",
+		"extended-desc": "AppleTalk zone information",
+		"sightings": 0
+	},
+	{
+		"port": 209,
+		"exploitable": 1,
+		"desc": "QMTP",
+		"extended-desc": "Quick Mail Transfer Protocol (QMTP)",
+		"sightings": 0
+	},
+	{
+		"port": 210,
+		"exploitable": 1,
+		"desc": "Z39.50",
+		"extended-desc": "NISO Z39.50 database",
+		"sightings": 0
+	},
+	{
+		"port": 213,
+		"exploitable": 1,
+		"desc": "IPX",
+		"extended-desc": "Internetwork Packet Exchange (IPX), a datagram protocol commonly used in Novell Netware environments",
+		"sightings": 0
+	},
+	{
+		"port": 220,
+		"exploitable": 1,
+		"desc": "IMAP3",
+		"extended-desc": "Internet Message Access Protocol version 3",
+		"sightings": 0
+	},
+	{
+		"port": 245,
+		"exploitable": 1,
+		"desc": "LINK",
+		"extended-desc": "LINK / 3-DNS iQuery service",
+		"sightings": 0
+	},
+	{
+		"port": 347,
+		"exploitable": 1,
+		"desc": "FATSERV",
+		"extended-desc": "FATMEN file and tape management server",
+		"sightings": 0
+	},
+	{
+		"port": 363,
+		"exploitable": 1,
+		"desc": "RSVP_TUNNEL",
+		"extended-desc": "RSVP Tunnel",
+		"sightings": 0
+	},
+	{
+		"port": 369,
+		"exploitable": 1,
+		"desc": "RPC2PORTMAP",
+		"extended-desc": "Coda file system portmapper",
+		"sightings": 0
+	},
+	{
+		"port": 370,
+		"exploitable": 1,
+		"desc": "CODAAUTH2",
+		"extended-desc": "Coda file system authentication services",
+		"sightings": 0
+	},
+	{
+		"port": 372,
+		"exploitable": 1,
+		"desc": "ULISTPROC",
+		"extended-desc": "UNIX LISTSERV",
+		"sightings": 0
+	},
+	{
+		"port": 389,
+		"exploitable": 1,
+		"desc": "LDAP",
+		"extended-desc": "Lightweight Directory Access Protocol (LDAP)",
+		"sightings": 12
+	},
+	{
+		"port": 427,
+		"exploitable": 1,
+		"desc": "SVRLOC",
+		"extended-desc": "Service Location Protocol (SLP)",
+		"sightings": 0
+	},
+	{
+		"port": 434,
+		"exploitable": 1,
+		"desc": "MOBILEIP-AGENT",
+		"extended-desc": "Mobile Internet Protocol (IP) agent",
+		"sightings": 0
+	},
+	{
+		"port": 435,
+		"exploitable": 1,
+		"desc": "MOBILIP-MN",
+		"extended-desc": "Mobile Internet Protocol (IP) manager",
+		"sightings": 0
+	},
+	{
+		"port": 443,
+		"exploitable": 3,
+		"desc": "HTTPS",
+		"extended-desc": "Secure Hypertext Transfer Protocol (HTTP)",
+		"sightings": 107
+	},
+	{
+		"port": 444,
+		"exploitable": 1,
+		"desc": "SNPP",
+		"extended-desc": "Simple Network Paging Protocol",
+		"sightings": 3
+	},
+	{
+		"port": 445,
+		"exploitable": 1,
+		"desc": "MICROSOFT-DS",
+		"extended-desc": "Server Message Block (SMB) over TCP/IP",
+		"sightings": 21
+	},
+	{
+		"port": 464,
+		"exploitable": 1,
+		"desc": "KPASSWD",
+		"extended-desc": "Kerberos password and key changing services",
+		"sightings": 0
+	},
+	{
+		"port": 468,
+		"exploitable": 1,
+		"desc": "PHOTURIS",
+		"extended-desc": "Photuris session key management protocol",
+		"sightings": 0
+	},
+	{
+		"port": 487,
+		"exploitable": 1,
+		"desc": "SAFT",
+		"extended-desc": "Simple Asynchronous File Transfer (SAFT) protocol",
+		"sightings": 0
+	},
+	{
+		"port": 488,
+		"exploitable": 1,
+		"desc": "GSS-HTTP",
+		"extended-desc": "Generic Security Services (GSS) for HTTP",
+		"sightings": 0
+	},
+	{
+		"port": 496,
+		"exploitable": 1,
+		"desc": "PIM-RP-DISC",
+		"extended-desc": "Rendezvous Point Discovery (RP-DISC) for Protocol Independent Multicast (PIM) services",
+		"sightings": 0
+	},
+	{
+		"port": 500,
+		"exploitable": 1,
+		"desc": "ISAKMP",
+		"extended-desc": "Internet Security Association and Key Management Protocol (ISAKMP)",
+		"sightings": 0
+	},
+	{
+		"port": 535,
+		"exploitable": 1,
+		"desc": "IIOP",
+		"extended-desc": "Internet Inter-Orb Protocol (IIOP)",
+		"sightings": 0
+	},
+	{
+		"port": 538,
+		"exploitable": 1,
+		"desc": "GDOMAP",
+		"extended-desc": "GNUstep Distributed Objects Mapper (GDOMAP)",
+		"sightings": 0
+	},
+	{
+		"port": 546,
+		"exploitable": 1,
+		"desc": "DHCPV6-CLIENT",
+		"extended-desc": "Dynamic Host Configuration Protocol (DHCP) version 6 client",
+		"sightings": 0
+	},
+	{
+		"port": 547,
+		"exploitable": 1,
+		"desc": "DHCPV6-SERVER",
+		"extended-desc": "Dynamic Host Configuration Protocol (DHCP) version 6 Service",
+		"sightings": 0
+	},
+	{
+		"port": 554,
+		"exploitable": 1,
+		"desc": "RTSP",
+		"extended-desc": "Real Time Stream Control Protocol (RTSP)",
+		"sightings": 5
+	},
+	{
+		"port": 563,
+		"exploitable": 1,
+		"desc": "NNTPS",
+		"extended-desc": "Network News Transport Protocol over Secure Sockets Layer (NNTPS)",
+		"sightings": 0
+	},
+	{
+		"port": 565,
+		"exploitable": 1,
+		"desc": "WHOAMI",
+		"extended-desc": "whoami user ID listing",
+		"sightings": 0
+	},
+	{
+		"port": 587,
+		"exploitable": 1,
+		"desc": "SUBMISSION",
+		"extended-desc": "Mail Message Submission Agent (MSA)",
+		"sightings": 0
+	},
+	{
+		"port": 610,
+		"exploitable": 1,
+		"desc": "NPMP-LOCAL",
+		"extended-desc": "Network Peripheral Management Protocol (NPMP) local / Distributed Queueing System (DQS)",
+		"sightings": 0
+	},
+	{
+		"port": 611,
+		"exploitable": 1,
+		"desc": "NPMP-GUI",
+		"extended-desc": "Network Peripheral Management Protocol (NPMP) GUI / Distributed Queueing System (DQS)",
+		"sightings": 0
+	},
+	{
+		"port": 612,
+		"exploitable": 1,
+		"desc": "HMMP-IND",
+		"extended-desc": "HyperMedia Management Protocol (HMMP) Indication / DQS",
+		"sightings": 0
+	},
+	{
+		"port": 631,
+		"exploitable": 1,
+		"desc": "IPP",
+		"extended-desc": "Internet Printing Protocol (IPP)",
+		"sightings": 1
+	},
+	{
+		"port": 636,
+		"exploitable": 1,
+		"desc": "LDAPS",
+		"extended-desc": "Lightweight Directory Access Protocol over Secure Sockets Layer (LDAPS)",
+		"sightings": 0
+	},
+	{
+		"port": 674,
+		"exploitable": 1,
+		"desc": "ACAP",
+		"extended-desc": "Application Configuration Access Protocol (ACAP)",
+		"sightings": 0
+	},
+	{
+		"port": 694,
+		"exploitable": 1,
+		"desc": "HA-CLUSTER",
+		"extended-desc": "Heartbeat services for High-Availability Clusters",
+		"sightings": 0
+	},
+	{
+		"port": 749,
+		"exploitable": 1,
+		"desc": "KERBEROS-ADM",
+		"extended-desc": "Kerberos version 5 (v5) 'kadmin' database administration",
+		"sightings": 0
+	},
+	{
+		"port": 750,
+		"exploitable": 1,
+		"desc": "KERBEROS-IV",
+		"extended-desc": "Kerberos version 4 (v4) services",
+		"sightings": 0
+	},
+	{
+		"port": 765,
+		"exploitable": 1,
+		"desc": "WEBSTER",
+		"extended-desc": "Network Dictionary",
+		"sightings": 0
+	},
+	{
+		"port": 767,
+		"exploitable": 1,
+		"desc": "PHONEBOOK",
+		"extended-desc": "Network Phonebook",
+		"sightings": 0
+	},
+	{
+		"port": 873,
+		"exploitable": 1,
+		"desc": "RSYNC",
+		"extended-desc": "rsync file transfer services",
+		"sightings": 2
+	},
+	{
+		"port": 992,
+		"exploitable": 1,
+		"desc": "TELNETS",
+		"extended-desc": "Telnet over Secure Sockets Layer (TelnetS)",
+		"sightings": 0
+	},
+	{
+		"port": 993,
+		"exploitable": 1,
+		"desc": "IMAPS",
+		"extended-desc": "Internet Message Access Protocol over Secure Sockets Layer (IMAPS)",
+		"sightings": 0
+	},
+	{
+		"port": 994,
+		"exploitable": 1,
+		"desc": "IRCS",
+		"extended-desc": "Internet Relay Chat over Secure Sockets Layer (IRCS)",
+		"sightings": 0
+	},
+	{
+		"port": 995,
+		"exploitable": 1,
+		"desc": "POP3S",
+		"extended-desc": "Post Office Protocol version 3 over Secure Sockets Layer (POP3S)",
+		"sightings": 0
+	},
+	{
+		"port": 512,
+		"exploitable": 1,
+		"desc": "EXEC",
+		"extended-desc": "Authentication for remote process execution",
+		"sightings": 0
+	},
+	{
+		"port": 512,
+		"exploitable": 1,
+		"desc": "BIFF [COMSAT]",
+		"extended-desc": "Asynchrous mail client (biff) and service (comsat)",
+		"sightings": 0
+	},
+	{
+		"port": 513,
+		"exploitable": 1,
+		"desc": "LOGIN",
+		"extended-desc": "Remote Login (rlogin)",
+		"sightings": 2
+	},
+	{
+		"port": 513,
+		"exploitable": 1,
+		"desc": "WHO [WHOD]",
+		"extended-desc": "whod user logging daemon",
+		"sightings": 2
+	},
+	{
+		"port": 514,
+		"exploitable": 1,
+		"desc": "SHELL [CMD]",
+		"extended-desc": "Remote shell (rshell) and remote copy (rcp) with no logging",
+		"sightings": 2
+	},
+	{
+		"port": 514,
+		"exploitable": 1,
+		"desc": "SYSLOG",
+		"extended-desc": "UNIX system logging service",
+		"sightings": 2
+	},
+	{
+		"port": 515,
+		"exploitable": 1,
+		"desc": "PRINTER [SPOOLER]",
+		"extended-desc": "Line printer (lpr) spooler",
+		"sightings": 11
+	},
+	{
+		"port": 517,
+		"exploitable": 1,
+		"desc": "TALK",
+		"extended-desc": "Talk remote calling service and client",
+		"sightings": 0
+	},
+	{
+		"port": 518,
+		"exploitable": 1,
+		"desc": "NTALK",
+		"extended-desc": "Network talk (ntalk) remote calling service and client",
+		"sightings": 0
+	},
+	{
+		"port": 519,
+		"exploitable": 1,
+		"desc": "UTIME [UNIXTIME]",
+		"extended-desc": "UNIX time (utime) protocol",
+		"sightings": 0
+	},
+	{
+		"port": 520,
+		"exploitable": 1,
+		"desc": "EFS",
+		"extended-desc": "Extended Filename Server (EFS)",
+		"sightings": 0
+	},
+	{
+		"port": 520,
+		"exploitable": 1,
+		"desc": "ROUTER [ROUTE, ROUTED]",
+		"extended-desc": "Routing Information Protocol (RIP)",
+		"sightings": 0
+	},
+	{
+		"port": 521,
+		"exploitable": 1,
+		"desc": "RIPNG",
+		"extended-desc": "Routing Information Protocol for Internet Protocol version 6 (IPv6)",
+		"sightings": 0
+	},
+	{
+		"port": 525,
+		"exploitable": 1,
+		"desc": "TIMED [TIMESERVER]",
+		"extended-desc": "Time daemon (timed)",
+		"sightings": 0
+	},
+	{
+		"port": 526,
+		"exploitable": 1,
+		"desc": "TEMPO [NEWDATE]",
+		"extended-desc": "Tempo",
+		"sightings": 0
+	},
+	{
+		"port": 530,
+		"exploitable": 1,
+		"desc": "COURIER [RPC]",
+		"extended-desc": "Courier Remote Procedure Call (RPC) protocol",
+		"sightings": 0
+	},
+	{
+		"port": 531,
+		"exploitable": 1,
+		"desc": "CONFERENCE [CHAT]",
+		"extended-desc": "Internet Relay Chat",
+		"sightings": 0
+	},
+	{
+		"port": 532,
+		"exploitable": 1,
+		"desc": "NETNEWS",
+		"extended-desc": "Netnews newsgroup service",
+		"sightings": 1
+	},
+	{
+		"port": 533,
+		"exploitable": 1,
+		"desc": "NETWALL",
+		"extended-desc": "Netwall for emergency broadcasts",
+		"sightings": 0
+	},
+	{
+		"port": 540,
+		"exploitable": 1,
+		"desc": "UUCP [UUCPD]",
+		"extended-desc": "UNIX-to-UNIX copy services",
+		"sightings": 0
+	},
+	{
+		"port": 543,
+		"exploitable": 1,
+		"desc": "KLOGIN",
+		"extended-desc": "Kerberos version 5 (v5) remote login",
+		"sightings": 0
+	},
+	{
+		"port": 544,
+		"exploitable": 1,
+		"desc": "KSHELL",
+		"extended-desc": "Kerberos version 5 (v5) remote shell",
+		"sightings": 0
+	},
+	{
+		"port": 548,
+		"exploitable": 1,
+		"desc": "AFPOVERTCP",
+		"extended-desc": "Appletalk Filing Protocol (AFP) over Transmission Control Protocol (TCP)",
+		"sightings": 2
+	},
+	{
+		"port": 556,
+		"exploitable": 1,
+		"desc": "REMOTEFS [RFS_SERVER, RFS]",
+		"extended-desc": "Brunhoff's Remote Filesystem (RFS)",
+		"sightings": 0
+	},
+	{
+		"port": 1080,
+		"exploitable": 1,
+		"desc": "SOCKS",
+		"extended-desc": "SOCKS network application proxy services",
+		"sightings": 0
+	},
+	{
+		"port": 1236,
+		"exploitable": 1,
+		"desc": "BVCONTROL [RMTCFG]",
+		"extended-desc": "Remote configuration server for Gracilis Packeten network switches[a]",
+		"sightings": 0
+	},
+	{
+		"port": 1300,
+		"exploitable": 1,
+		"desc": "H323HOSTCALLSC",
+		"extended-desc": "H.323 telecommunication Host Call Secure",
+		"sightings": 0
+	},
+	{
+		"port": 1433,
+		"exploitable": 1,
+		"desc": "MS-SQL-S",
+		"extended-desc": "Microsoft SQL Server",
+		"sightings": 0
+	},
+	{
+		"port": 1434,
+		"exploitable": 1,
+		"desc": "MS-SQL-M",
+		"extended-desc": "Microsoft SQL Monitor",
+		"sightings": 0
+	},
+	{
+		"port": 1494,
+		"exploitable": 1,
+		"desc": "ICA",
+		"extended-desc": "Citrix ICA Client",
+		"sightings": 0
+	},
+	{
+		"port": 1512,
+		"exploitable": 1,
+		"desc": "WINS",
+		"extended-desc": "Microsoft Windows Internet Name Server",
+		"sightings": 0
+	},
+	{
+		"port": 1524,
+		"exploitable": 1,
+		"desc": "INGRESLOCK",
+		"extended-desc": "Ingres Database Management System (DBMS) lock services",
+		"sightings": 0
+	},
+	{
+		"port": 1525,
+		"exploitable": 1,
+		"desc": "PROSPERO-NP",
+		"extended-desc": "Prospero non-privileged",
+		"sightings": 0
+	},
+	{
+		"port": 1645,
+		"exploitable": 1,
+		"desc": "DATAMETRICS [OLD-RADIUS]",
+		"extended-desc": "Datametrics / old radius entry",
+		"sightings": 0
+	},
+	{
+		"port": 1646,
+		"exploitable": 1,
+		"desc": "SA-MSG-PORT [OLDRADACCT]",
+		"extended-desc": "sa-msg-port / old radacct entry",
+		"sightings": 0
+	},
+	{
+		"port": 1649,
+		"exploitable": 1,
+		"desc": "KERMIT",
+		"extended-desc": "Kermit file transfer and management service",
+		"sightings": 0
+	},
+	{
+		"port": 1701,
+		"exploitable": 1,
+		"desc": "L2TP [L2F]",
+		"extended-desc": "Layer 2 Tunneling Protocol (LT2P) / Layer 2 Forwarding (L2F)",
+		"sightings": 0
+	},
+	{
+		"port": 1718,
+		"exploitable": 1,
+		"desc": "H323GATEDISC",
+		"extended-desc": "H.323 telecommunication Gatekeeper Discovery",
+		"sightings": 0
+	},
+	{
+		"port": 1719,
+		"exploitable": 1,
+		"desc": "H323GATESTAT",
+		"extended-desc": "H.323 telecommunication Gatekeeper Status",
+		"sightings": 0
+	},
+	{
+		"port": 1720,
+		"exploitable": 1,
+		"desc": "H323HOSTCALL",
+		"extended-desc": "H.323 telecommunication Host Call setup",
+		"sightings": 0
+	},
+	{
+		"port": 1758,
+		"exploitable": 1,
+		"desc": "TFTP-MCAST",
+		"extended-desc": "Trivial FTP Multicast",
+		"sightings": 0
+	},
+	{
+		"port": 1759,
+		"exploitable": 1,
+		"desc": "MTFTP",
+		"extended-desc": "Multicast Trivial FTP (MTFTP)",
+		"sightings": 0
+	},
+	{
+		"port": 1789,
+		"exploitable": 1,
+		"desc": "HELLO",
+		"extended-desc": "Hello router communication protocol",
+		"sightings": 0
+	},
+	{
+		"port": 1812,
+		"exploitable": 1,
+		"desc": "RADIUS",
+		"extended-desc": "Radius dial-up authentication and accounting services",
+		"sightings": 1
+	},
+	{
+		"port": 1813,
+		"exploitable": 1,
+		"desc": "RADIUS-ACCT",
+		"extended-desc": "Radius Accounting",
+		"sightings": 0
+	},
+	{
+		"port": 1911,
+		"exploitable": 1,
+		"desc": "MTP",
+		"extended-desc": "Starlight Networks Multimedia Transport Protocol (MTP)",
+		"sightings": 0
+	},
+	{
+		"port": 1985,
+		"exploitable": 1,
+		"desc": "HSRP",
+		"extended-desc": "Cisco Hot Standby Router Protocol",
+		"sightings": 0
+	},
+	{
+		"port": 1986,
+		"exploitable": 1,
+		"desc": "LICENSEDAEMON",
+		"extended-desc": "Cisco License Management Daemon",
+		"sightings": 0
+	},
+	{
+		"port": 1997,
+		"exploitable": 1,
+		"desc": "GDP-PORT",
+		"extended-desc": "Cisco Gateway Discovery Protocol (GDP)",
+		"sightings": 0
+	},
+	{
+		"port": 2049,
+		"exploitable": 1,
+		"desc": "NFS [NFSD]",
+		"extended-desc": "Network File System (NFS)",
+		"sightings": 1
+	},
+	{
+		"port": 2102,
+		"exploitable": 1,
+		"desc": "ZEPHYR-SRV",
+		"extended-desc": "Zephyr distributed messaging Server",
+		"sightings": 0
+	},
+	{
+		"port": 2103,
+		"exploitable": 1,
+		"desc": "ZEPHYR-CLT",
+		"extended-desc": "Zephyr client",
+		"sightings": 2
+	},
+	{
+		"port": 2104,
+		"exploitable": 1,
+		"desc": "ZEPHYR-HM",
+		"extended-desc": "Zephyr host manager",
+		"sightings": 0
+	},
+	{
+		"port": 2401,
+		"exploitable": 1,
+		"desc": "CVSPSERVER",
+		"extended-desc": "Concurrent Versions System (CVS) client/server operations",
+		"sightings": 3
+	},
+	{
+		"port": 2430,
+		"exploitable": 1,
+		"desc": "VENUS",
+		"extended-desc": "Venus cache manager for Coda file system (codacon port)",
+		"sightings": 0
+	},
+	{
+		"port": 2430,
+		"exploitable": 1,
+		"desc": "VENUS",
+		"extended-desc": "Venus cache manager for Coda file system (callback/wbc interface)",
+		"sightings": 0
+	},
+	{
+		"port": 2431,
+		"exploitable": 1,
+		"desc": "VENUS-SE",
+		"extended-desc": "Venus Transmission Control Protocol (TCP) side effects",
+		"sightings": 0
+	},
+	{
+		"port": 2431,
+		"exploitable": 1,
+		"desc": "VENUS-SE",
+		"extended-desc": "Venus User Datagram Protocol (UDP) side effects",
+		"sightings": 0
+	},
+	{
+		"port": 2432,
+		"exploitable": 1,
+		"desc": "CODASRV",
+		"extended-desc": "Coda file system server port",
+		"sightings": 0
+	},
+	{
+		"port": 2433,
+		"exploitable": 1,
+		"desc": "CODASRV-SE",
+		"extended-desc": "Coda file system TCP side effects",
+		"sightings": 0
+	},
+	{
+		"port": 2433,
+		"exploitable": 1,
+		"desc": "CODASRV-SE",
+		"extended-desc": "Coda file system UDP SFTP side effect",
+		"sightings": 0
+	},
+	{
+		"port": 2600,
+		"exploitable": 1,
+		"desc": "HPSTGMGR [ZEBRASRV]",
+		"extended-desc": "Zebra routing[b]",
+		"sightings": 0
+	},
+	{
+		"port": 2601,
+		"exploitable": 1,
+		"desc": "DISCP-CLIENT [ZEBRA]",
+		"extended-desc": "discp client; Zebra integrated shell",
+		"sightings": 0
+	},
+	{
+		"port": 2602,
+		"exploitable": 1,
+		"desc": "DISCP-SERVER [RIPD]",
+		"extended-desc": "discp server; Routing Information Protocol daemon (ripd)",
+		"sightings": 0
+	},
+	{
+		"port": 2603,
+		"exploitable": 1,
+		"desc": "SERVICEMETER [RIPNGD]",
+		"extended-desc": "Service Meter; RIP daemon for IPv6",
+		"sightings": 0
+	},
+	{
+		"port": 2604,
+		"exploitable": 1,
+		"desc": "NSC-CCS [OSPFD]",
+		"extended-desc": "NSC CCS; Open Shortest Path First daemon (ospfd)",
+		"sightings": 0
+	},
+	{
+		"port": 2605,
+		"exploitable": 1,
+		"desc": "NSC-POSA",
+		"extended-desc": "NSC POSA; Border Gateway Protocol daemon (bgpd)",
+		"sightings": 0
+	},
+	{
+		"port": 2606,
+		"exploitable": 1,
+		"desc": "NETMON [OSPF6D]",
+		"extended-desc": "Dell Netmon; OSPF for IPv6 daemon (ospf6d)",
+		"sightings": 0
+	},
+	{
+		"port": 2809,
+		"exploitable": 1,
+		"desc": "CORBALOC",
+		"extended-desc": "Common Object Request Broker Architecture (CORBA) naming service locator",
+		"sightings": 0
+	},
+	{
+		"port": 3130,
+		"exploitable": 1,
+		"desc": "ICPV2",
+		"extended-desc": "Internet Cache Protocol version 2 (v2); used by Squid proxy caching server",
+		"sightings": 0
+	},
+	{
+		"port": 3306,
+		"exploitable": 1,
+		"desc": "MYSQL",
+		"extended-desc": "MySQL database service",
+		"sightings": 7
+	},
+	{
+		"port": 3346,
+		"exploitable": 1,
+		"desc": "TRNSPRNTPROXY",
+		"extended-desc": "Transparent proxy",
+		"sightings": 0
+	},
+	{
+		"port": 4011,
+		"exploitable": 1,
+		"desc": "PXE",
+		"extended-desc": "Pre-execution Environment (PXE) service",
+		"sightings": 0
+	},
+	{
+		"port": 4321,
+		"exploitable": 1,
+		"desc": "RWHOIS",
+		"extended-desc": "Remote Whois (rwhois) service",
+		"sightings": 0
+	},
+	{
+		"port": 4444,
+		"exploitable": 1,
+		"desc": "KRB524",
+		"extended-desc": "Kerberos version 5 (v5) to version 4 (v4) ticket translator",
+		"sightings": 0
+	},
+	{
+		"port": 5002,
+		"exploitable": 1,
+		"desc": "RFE",
+		"extended-desc": "Radio Free Ethernet (RFE) audio broadcasting system",
+		"sightings": 0
+	},
+	{
+		"port": 5308,
+		"exploitable": 1,
+		"desc": "CFENGINE",
+		"extended-desc": "Configuration engine (Cfengine)",
+		"sightings": 1
+	},
+	{
+		"port": 5999,
+		"exploitable": 1,
+		"desc": "CVSUP [CVSUP]",
+		"extended-desc": "CVSup file transfer and update tool",
+		"sightings": 0
+	},
+	{
+		"port": 6000,
+		"exploitable": 1,
+		"desc": "X11 [X]",
+		"extended-desc": "X Window System services",
+		"sightings": 0
+	},
+	{
+		"port": 7000,
+		"exploitable": 1,
+		"desc": "AFS3-FILESERVER",
+		"extended-desc": "Andrew File System (AFS) file server",
+		"sightings": 0
+	},
+	{
+		"port": 7001,
+		"exploitable": 1,
+		"desc": "AFS3-CALLBACK",
+		"extended-desc": "AFS port for callbacks to cache manager",
+		"sightings": 3
+	},
+	{
+		"port": 7002,
+		"exploitable": 1,
+		"desc": "AFS3-PRSERVER",
+		"extended-desc": "AFS user and group database",
+		"sightings": 1
+	},
+	{
+		"port": 7003,
+		"exploitable": 1,
+		"desc": "AFS3-VLSERVER",
+		"extended-desc": "AFS volume location database",
+		"sightings": 0
+	},
+	{
+		"port": 7004,
+		"exploitable": 1,
+		"desc": "AFS3-KASERVER",
+		"extended-desc": "AFS Kerberos authentication service",
+		"sightings": 0
+	},
+	{
+		"port": 7005,
+		"exploitable": 1,
+		"desc": "AFS3-VOLSER",
+		"extended-desc": "AFS volume management server",
+		"sightings": 0
+	},
+	{
+		"port": 7006,
+		"exploitable": 1,
+		"desc": "AFS3-ERRORS",
+		"extended-desc": "AFS error interpretation service",
+		"sightings": 0
+	},
+	{
+		"port": 7007,
+		"exploitable": 1,
+		"desc": "AFS3-BOS",
+		"extended-desc": "AFS basic overseer process",
+		"sightings": 0
+	},
+	{
+		"port": 7008,
+		"exploitable": 1,
+		"desc": "AFS3-UPDATE",
+		"extended-desc": "AFS server-to-server updater",
+		"sightings": 0
+	},
+	{
+		"port": 7009,
+		"exploitable": 1,
+		"desc": "AFS3-RMTSYS",
+		"extended-desc": "AFS remote cache manager service",
+		"sightings": 0
+	},
+	{
+		"port": 9876,
+		"exploitable": 1,
+		"desc": "SD",
+		"extended-desc": "Session Director for IP multicast conferencing",
+		"sightings": 1
+	},
+	{
+		"port": 10080,
+		"exploitable": 1,
+		"desc": "AMANDA",
+		"extended-desc": "Advanced Maryland Automatic Network Disk Archiver (Amanda) backup services",
+		"sightings": 1
+	},
+	{
+		"port": 11371,
+		"exploitable": 1,
+		"desc": "PGPKEYSERVER",
+		"extended-desc": "Pretty Good Privacy (PGP) / GNU Privacy Guard (GPG) public keyserver",
+		"sightings": 0
+	},
+	{
+		"port": 11720,
+		"exploitable": 1,
+		"desc": "H323CALLSIGALT",
+		"extended-desc": "H.323 Call Signal Alternate",
+		"sightings": 0
+	},
+	{
+		"port": 13720,
+		"exploitable": 1,
+		"desc": "BPRD",
+		"extended-desc": "Veritas NetBackup Request Daemon (bprd)",
+		"sightings": 0
+	},
+	{
+		"port": 13721,
+		"exploitable": 1,
+		"desc": "BPDBM",
+		"extended-desc": "Veritas NetBackup Database Manager (bpdbm)",
+		"sightings": 0
+	},
+	{
+		"port": 13722,
+		"exploitable": 1,
+		"desc": "BPJAVA-MSVC",
+		"extended-desc": "Veritas NetBackup Java / Microsoft Visual C++ (MSVC) protocol",
+		"sightings": 3
+	},
+	{
+		"port": 13724,
+		"exploitable": 1,
+		"desc": "VNETD",
+		"extended-desc": "Veritas network utility",
+		"sightings": 0
+	},
+	{
+		"port": 13782,
+		"exploitable": 1,
+		"desc": "BPCD",
+		"extended-desc": "Veritas NetBackup",
+		"sightings": 0
+	},
+	{
+		"port": 13783,
+		"exploitable": 1,
+		"desc": "VOPIED",
+		"extended-desc": "Veritas VOPIE authentication daemon",
+		"sightings": 0
+	},
+	{
+		"port": 22273,
+		"exploitable": 1,
+		"desc": "WNN6 [WNN4]",
+		"extended-desc": "Kana/Kanji conversion system[c]",
+		"sightings": 0
+	},
+	{
+		"port": 26000,
+		"exploitable": 1,
+		"desc": "QUAKE",
+		"extended-desc": "Quake (and related) multi-player game servers",
+		"sightings": 2
+	},
+	{
+		"port": 26208,
+		"exploitable": 1,
+		"desc": "WNN6-DS",
+		"extended-desc": "Wnn6 Kana/Kanji server",
+		"sightings": 0
+	},
+	{
+		"port": 33434,
+		"exploitable": 1,
+		"desc": "TRACEROUTE",
+		"extended-desc": "Traceroute network tracking tool",
+		"sightings": 0
+	}
+]

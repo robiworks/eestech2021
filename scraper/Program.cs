@@ -2,9 +2,6 @@
 using System.IO;
 using System.Collections.Generic;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
 using System.Threading;
 
 namespace scraper
@@ -13,6 +10,22 @@ namespace scraper
     {
         static void Main(string[] args)
         {
+            ConvertJSONStringToInt();
+        }
+
+        private static string ParseExploitNumber(string port) {
+            using (var driver = new ChromeDriver()) {
+                driver.Navigate().GoToUrl("https://www.exploit-db.com/search?port=" + port);
+                Thread.Sleep(3000);
+                string result = driver.FindElementByClassName("dataTables_info").GetAttribute("textContent");
+                string[] arr = result.Split(' ');
+                string exploits = arr[5].Replace(",", "");
+                Console.WriteLine($"Port: {port}, number of exploits: {exploits}");
+                return exploits;
+            }
+        }
+
+        private static void ParseInputToJSON() {
             string[] input = File.ReadAllLines("input1.txt");
             List<String> output = new List<String>();
             output.Add("[");
@@ -54,18 +67,6 @@ namespace scraper
             Console.WriteLine("Wrote output.json");
         }
 
-        private static string ParseExploitNumber(string port) {
-            using (var driver = new ChromeDriver()) {
-                driver.Navigate().GoToUrl("https://www.exploit-db.com/search?port=" + port);
-                Thread.Sleep(3000);
-                string result = driver.FindElementByClassName("dataTables_info").GetAttribute("textContent");
-                string[] arr = result.Split(' ');
-                string exploits = arr[5].Replace(",", "");
-                Console.WriteLine($"Port: {port}, number of exploits: {exploits}");
-                return exploits;
-            }
-        }
-
         private static void Parse1() {
             Console.WriteLine("Parsing input1.txt");
             string[] input = File.ReadAllLines("input1.txt");
@@ -77,6 +78,26 @@ namespace scraper
             string[] file = output.ToArray();
             File.WriteAllLines("output1.txt", file);
             Console.WriteLine("Wrote output1.txt");
+        }
+
+        private static void ConvertJSONStringToInt() {
+            string[] json = File.ReadAllLines("output.json");
+            for (int i = 0; i < json.Length; i++) {
+                if (json[i].Contains("sightings")) {
+                    int length = json[i].LastIndexOf("\"") - json[i].IndexOf("sightings") - 13;
+                    string sightings = json[i].Substring(json[i].IndexOf("sightings") + 13, length);
+                    json[i] = "\t\t\"sightings\": " + sightings;
+                    int num = int.Parse(sightings);
+                    if (num <= 50) {
+                        json[i - 3] = "\t\t\"exploitable\": 1,";
+                    } else if (50 < num && num <= 100) {
+                        json[i - 3] = "\t\t\"exploitable\": 2,";
+                    } else {
+                        json[i - 3] = "\t\t\"exploitable\": 3,";
+                    }
+                }
+            }
+            File.WriteAllLines("ports.json", json);
         }
     }
 }

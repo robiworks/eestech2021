@@ -1,0 +1,31 @@
+{
+  "name": "krka-izziv",
+  "version": "0.h",
+  "description": "Krka Izziv",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "latest",
+    "fs-extra": "latest",
+    "libnmap": "latest",
+    "local-devices": "^3.1.0",
+    "mime-types": "latest",
+    "node-nmap": "^4.0.0",
+    "queued-up": "latest",
+    "start": "^5.1.0",
+    "xml2js": "latest"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "krka",
+    "ekipa2"
+  ],
+  "author": "ekipa2",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-packager": "^15.2.0"
+  }
+}
